@@ -7,7 +7,7 @@ type Props = {}
 
 function Hero({}: Props) {
   return (
-    <div className='h-screen flex flex-col space-y-8 items-center 
+    <div className='lg:fixed lg:ml-48 h-screen flex flex-col space-y-8 items-center 
     justify-center text-center overflow-hidden'> 
      <BackgroundCircles/>
      <motion.div 

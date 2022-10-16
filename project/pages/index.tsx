@@ -4,6 +4,7 @@ import Header from '../components/Header'
 import Homepage from '../components/Home'
 import Hero from '../components/Hero'
 import About from '../components/About'
+import Experience from '../components/Experience'
 
 const Home: NextPage = () => {
   return (
@@ -26,6 +27,10 @@ const Home: NextPage = () => {
       </div>
       <section id='about' className='snap-center'>
         <About/>
+      </section>
+
+      <section id="experience" className='snap-center'>
+        <Experience/>
       </section>
       </div>
   )
