@@ -10,7 +10,8 @@ export default function Home({}: Props) {
       <h5 className="ml-16 w-96 font-['Poppins']">
       <strong> Web Developer | Community Developer </strong>
       who specializes in front end.  </h5>
-      <p className='ml-16 w-96 mt-3 text-sm text-gray-500'>Hello! I'm Habeeb Lateef, I am a self motivated developer who loves to contribute to open source. I am a community developer
+      <p className='ml-16 w-96 mt-3 text-sm text-gray-500'>
+        Hello! I'm Habeeb Lateef, I am a self motivated developer who loves to contribute to open source. I am a community developer
       </p>
     </div>
   )

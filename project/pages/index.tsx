@@ -3,6 +3,7 @@ import Head from 'next/head'
 import Header from '../components/Header'
 import Homepage from '../components/Home'
 import Hero from '../components/Hero'
+import About from '../components/About'
 
 const Home: NextPage = () => {
   return (
@@ -16,12 +17,16 @@ const Home: NextPage = () => {
       </Head>
       
       <Header/>
-      <div className='flex'>
-      <Homepage/> 
-      <section id='hero' className='span-center w-screen'>
-      <Hero/>
+      <div className="flex">
+        <Homepage/>
+      {/* Hero */}
+      <section id='hero' className='snap-start -mt-[80px] w-screen'>
+      <Hero />
       </section>
       </div>
+      <section id='about' className='snap-center'>
+        <About/>
+      </section>
       </div>
   )
 }
