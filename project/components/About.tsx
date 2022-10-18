@@ -28,13 +28,12 @@ function About({}: Props) {
             }}
             whileInView={{x:0, opacity:1}}
             src="/about.jpeg" 
-            className='lg:hidden mt-40 mb-20 md:mb-0 flex-shrink-0 w-56
-            h-56 rounded-full object-cover md:rounded-lg
-            md:w-64 md:h-95 xl:w-[400px] xl:h-[300px]'>
-            </motion.img>
+            className='lg:hidden mt-[120px] mb-20 md:mb-0 flex-shrink-0 w-48
+            h-48 rounded-full object-cover md:rounded-lg
+            md:w-64 md:h-95 xl:w-[400px] xl:h-[300px]'/>
 
             <div className='lg:w-96 lg:mr-[650px] space-y-10 -mt-20 px-0 md:px-10'>
-                <h4 className='text-4xl font-semibold'>
+                <h4 className='text-3xl font-semibold'>
                     Here is a <span className='underline decoration-[#F7AB0A]/50'>little </span>
                     background
                 </h4>
