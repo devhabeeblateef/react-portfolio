@@ -10,6 +10,9 @@ module.exports = {
         'hero': "url('../styles/img/background.jpg')",
       },
     },
+    
   },
-  plugins: [],
+  plugins: [
+    require('tailwind-scrollbar'),
+  ],
 }

@@ -4,31 +4,36 @@ import {motion} from 'framer-motion'
 type Props = {}
 
 function Projects({}: Props) {
-    const projects = [1,2,3,4,5]
+    const projects = [1,2,3]
   return (
     <motion.div
     initial={{opacity: 0}}
     whileInView={{opacity: 1}}
     transition={{duration: 1.5}}
 
-    className='flex flex-col relative text-center 
-    h-screen md:text-left md:flex-row max-w-7xl px-10
-    justify-evenly mx-auto items-center w-screen mr-[700px] xl:-ml-[350px]'>
+    className='lg:mr-[650px] h-screen relative overflow-hidden flex
+    flex-col text-lft md:flex-row max-w-full px-10 justify-evenly
+    mx-auto items-center'>
 
-        <h3 className='lg:hidden absolute top-24 uppercase tracking-[20px] text-gray-500 text-2xl'>
+        <h3 className='lg:hidden absolute top-24 uppercase tracking-[20px]
+         text-gray-500 text-2xl'>
             Projects
         </h3>
 
-    <div className='relative w-full flex overflow-x-scroll overflow-y-hidden snap-x snap-mandatory z-20'>
+    <div className='w-full h-[550px] flex space-x-5 overflow-x-scroll
+         scrollbar-thin scrollbar-track-black/20 scrollbar-thumb-[#F78A0A]
+         p-5 snap-x snap-mandatory'>
         {projects.map((project, i) => (
-            <div key={i} className='w-screen flex-shrink-0 snap-center flex flex-col space-y-5 items-center
-            justify-center p-20 md:p-44 h-screen'>
+            <article key={i} className='flex flex-col rounded-lg items-center space-y-7
+            flex-shrink-0 w-[500px] md:w-[600px] xl:w-[900px] snap-center p-10 cursor-pointer
+            transition-opacity mt-[20px] duration-200 overflow-hidden'>
                 <motion.img
-                initial={{y: -300, opacity:0}}
-                whileInView={{opacity: 1, y: 0}}
+                initial={{opacity:0}}
+                whileInView={{opacity: 1}}
                 transition={{duration: 1.2}}
                     src="/Netflix.png"
-                    className='w-28 h-28 mt-24'
+                    className='w-32 h-32 rounded-full xl:w-[200px] xl:h-[200px]
+                    object-cover object-center'
                     alt=""/>
                     
     <div className='space-y-10 px-0 md:px-10 max-w-6xl'>
@@ -39,7 +44,7 @@ function Projects({}: Props) {
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid nam perspiciatis illum! Facere earum cum voluptates omnis distinctio nulla dignissimos in veniam saepe voluptatibus iste, voluptas sint dolorum? Rerum, maxime.
             </p>
             </div>
-            </div>
+            </article>
     ))}
     </div>
     {/* <div className='w-full absolute top-[30%] bg-[#F7AB0A]/10 left-0 h-[500px] -skew-y-12'></div> */}
