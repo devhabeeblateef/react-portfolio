@@ -38,5 +38,12 @@ export default {
       title: "Address",
       type: "string",
     },
+
+    {
+      name: "socials",
+      title: "socials",
+      type: "string",
+      of:[{type: "reference", to: {type: "social"}}],
+    },
   ],
 }
