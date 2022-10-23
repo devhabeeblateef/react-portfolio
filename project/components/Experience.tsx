@@ -14,16 +14,28 @@ function Experience({}: Props) {
     flex-col text-lft md:flex-row max-w-full px-10 justify-evenly
     mx-auto items-center'>
         <h3 className='lg:hidden absolute top-24 uppercase tracking-[20px]
-         text-gray-500 text-2xl'>
+         text-gray-500 text-xl'>
             Experience
          </h3>
 
-         <div className='w-full h-[550px] flex space-x-5 overflow-x-scroll
+         <div className='w-full h-[550px] mt-16 flex space-x-5 overflow-x-scroll
          scrollbar-thin scrollbar-track-black/20  scrollbar-thumb-[#F78A0A]
          p-5 snap-x snap-mandatory'>
-            <ExperienceCard/>
-            <ExperienceCard/>
-            <ExperienceCard/>
+            <ExperienceCard companyLogo='vicabia.jfif' role='Web Developer | SEO Manager' company='Vicabia Brand' year='2022-Present'
+            techOne='react.png' techTwo='tailwind.png' techThree='html.png' summaryPointOne='
+            Built web interfaces' 
+            summaryPointTwo='
+            SEO/ Web Analytics'/>
+            <ExperienceCard companyLogo='gdsc.webp' role='Web Stack Lead | Co-lead' company='Google Developer Students Club' year='2021-Present'
+            techOne='flutter.png' techTwo='firebase.webp' techThree='gmail.png' summaryPointOne='
+            Hosting GDSC Events' summaryPointTwo='
+            Hosting Bootcamps'/>
+            <ExperienceCard companyLogo='darmold.png' role='Web Developer | Designer' company='Darmold Surprises' year='2018' 
+            techOne='html.png'
+            techTwo='css.svg' techThree='javascript.png' summaryPointOne='
+            Built web interfaces'
+            
+            summaryPointTwo='Designed UI prototypes'/>
         
          </div>
     </motion.div>

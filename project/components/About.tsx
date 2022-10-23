@@ -14,7 +14,7 @@ function About({}: Props) {
     className='flex flex-col relative text-center 
     h-screen md:text-left md:flex-row max-w-7xl px-10
     justify-evenly mx-auto items-center'>
-        <h3 className='lg:hidden absolute top-24 uppercase tracking-[20px] text-gray-500 text-2xl'>
+        <h3 className='lg:hidden absolute top-24 uppercase tracking-[20px] text-gray-500 text-xl'>
             About
             </h3>
 
@@ -28,17 +28,19 @@ function About({}: Props) {
             }}
             whileInView={{x:0, opacity:1}}
             src="/about.jpeg" 
-            className='lg:hidden mt-[120px] mb-20 md:mb-0 flex-shrink-0 w-48
-            h-48 rounded-full object-cover md:rounded-lg
+            className='lg:hidden mt-[120px] mb-20 md:mb-0 flex-shrink-0 w-40
+            h-40 lg:w-45 lg:h-45 rounded-full object-cover md:rounded-lg
             md:w-64 md:h-95 xl:w-[400px] xl:h-[300px]'/>
 
-            <div className='lg:w-96 lg:mr-[650px] space-y-10 -mt-20 px-0 md:px-10'>
-                <h4 className='text-3xl font-semibold'>
-                    Here is a <span className='underline decoration-[#F7AB0A]/50'>little </span>
-                    background
+            <div className='lg:w-96 lg:mr-[650px] space-y-10 -mt-16 px-0 md:px-10'>
+                <h4 className='-mt-[28px] text-3xl font-semibold'>
+                    <span className='underline decoration-[#B6D0E2]/50'>About me. </span>
                 </h4>
                 <p className='text-base'>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio placeat quaerat fugit cupiditate, molestiae id non, ducimus dolorum veritatis animi eum quas aliquam soluta enim nesciunt deserunt molestias, totam atque.
+                I am a Front-end Engineer with comprehensive experience building clean interfaces. 
+                I enjoy blending the art of UI/UX with the skill of efficient programming to deliver
+                a responsive and enaging user experience. I also love developing communities and contributing
+                to open source!
                 </p>
             </div>
         </motion.div>

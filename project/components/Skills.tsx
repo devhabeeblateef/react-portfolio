@@ -15,7 +15,7 @@ function Skills({}: Props) {
     mx-auto items-center'>
 
 <h3 className='lg:hidden absolute top-24 uppercase tracking-[20px]
-         text-gray-500 text-2xl'>
+         text-gray-500 text-xl'>
             Skills
          </h3>
 
@@ -23,14 +23,16 @@ function Skills({}: Props) {
             Hover a skill for current proficiency</h3>
 
             <div className='grid grid-cols-4 gap-5'>
-                <Skill/>
-                <Skill/>
-                <Skill/>
-                <Skill/>
-                <Skill/>
-                <Skill/>
-                <Skill/>
-                <Skill/>
+                <Skill skill='react.png' proficiency='80%'/>
+                <Skill skill='firebase.webp' proficiency='80%'/>
+                <Skill skill='javascript.png' proficiency='80%'/>
+                <Skill skill='tailwind.png' proficiency='90%'/>
+                <Skill skill='flutter.png' proficiency='60%'/>
+                <Skill skill='html.png' proficiency='90%'/>
+                <Skill skill='css.png' proficiency='90%'/>
+                <Skill skill='next.png' proficiency='80%'/>
+                <Skill skill='figma.png' proficiency='80%'/>
+                <Skill skill='photoshop.png' proficiency='95%'/>
             </div>
     </motion.div>
   )

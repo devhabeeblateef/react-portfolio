@@ -27,9 +27,9 @@ function Hero({}: Props) {
      src='/avatar.png' alt=''/>
      </motion.div>
      <div className='z-20'>
-     <h2 className='text-sm uppercase text-gray-500 pb-2 tracking-[10px]'>
+     <h2 className='text-xs uppercase text-gray-500 pb-2 tracking-[10px]'>
       Front-End Enigineer</h2>
-     <h1 className='text-gray-500 text-2xl lg:text-3xl font-semibold px-10 animate-pulse'>
+     <h1 className='text-gray-500 text-xs  lg:text-3xl font-semibold px-10 animate-pulse'>
       <span>@devhabeeblateef</span>
      </h1>
 

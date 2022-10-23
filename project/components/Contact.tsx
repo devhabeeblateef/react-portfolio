@@ -18,15 +18,13 @@ function Contact({}: Props) {
             window.location.href = `mailto:habeeblateef002@gmail?subject=${formData.subject}&body=Hi, my name is ${formData.name}. ${formData.message} ${formData.email})`;
 
   return (
-    <div className='lg:mr-[650px] h-screen relative overflow-hidden flex
-    flex-col text-lft md:flex-row max-w-full px-10 justify-evenly
-    mx-auto items-center'>
-        <h3 className='hidden absolute top-24 uppercase tracking-[20px] text-gray-500 text-2xl'>
+    <div className=''>
+        {/* <h3 className='hidden absolute top-24 uppercase tracking-[20px] text-gray-500 text-2xl'>
             Contact
         </h3>
 
         <div className='flex mt-16 flex-col space-y-10'>
-        <h4 className='text-3xl font-semibold text-center'>
+        <h4 className='text-1xl font-semibold text-center'>
             I have got just what you need. {" "}
         </h4>
             <div>
@@ -46,8 +44,10 @@ function Contact({}: Props) {
                 </div>
             </div>
             
-
-            <form onSubmit={handleSubmit(onSubmit)} className='flex w-96 flex-col mr-24 space-y-2 mx-auto'>
+<div className='h-[550px]flex space-x-5 overflow-x-scroll
+         scrollbar-thin scrollbar-track-black/20  scrollbar-thumb-[#F78A0A]
+         p-5 snap-x snap-mandatory'>            
+    <form onSubmit={handleSubmit(onSubmit)} className='flex w-96 flex-col mr-24 space-y-2 mx-auto'>
                 <div className='flex space-x-2'>
                     <input {...register('name')} placeholder="Name" type="text" className='contactInput'/>
                     <input {...register('email')} placeholder="Email" className='contactInput' type="email" />
@@ -60,8 +60,8 @@ function Contact({}: Props) {
                     Submit
                  </button>
             </form>
-        
-        </div>
+            </div>
+        </div> */}
         </div>
   )
 }
